@@ -1,0 +1,50 @@
+.insight-section {
+    padding: 120px 0;
+    background-color: #030303;
+    text-align: center;
+}
+
+.insight-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insight-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 64px;
+}
+
+.insight-graphic {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    background: var(--bg-card);
+    border-radius: 20px;
+    margin-bottom: 48px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(182, 235, 255, 0.1);
+    background-image: radial-gradient(circle at center, rgba(182, 235, 255, 0.05) 0%, transparent 70%);
+}
+
+.insight-description {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    line-height: 1.8;
+    margin-bottom: 64px;
+}
+
+.insight-description strong {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.insight-divider {
+    width: 100px;
+    height: 4px;
+    background: var(--gradient-main);
+    border-radius: 2px;
+}

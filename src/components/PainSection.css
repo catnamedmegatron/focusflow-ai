@@ -1,0 +1,68 @@
+.pain-section {
+    padding: 120px 0;
+}
+
+.pain-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.pain-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.section-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.section-subtitle {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.pain-cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pain-card {
+    padding: 32px;
+}
+
+.pain-card .icon {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.pain-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.pain-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+    .pain-container {
+        flex-direction: column;
+    }
+
+    .pain-text {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+}

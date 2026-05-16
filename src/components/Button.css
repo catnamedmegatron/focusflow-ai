@@ -1,0 +1,34 @@
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.custom-button.primary {
+    background-color: var(--accent-cyan);
+    color: #000;
+    box-shadow: 0 0 20px rgba(182, 235, 255, 0.3);
+}
+
+.custom-button.primary:hover {
+    background-color: #d1f4ff;
+    box-shadow: 0 0 35px rgba(182, 235, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.custom-button.secondary {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-button.secondary:hover {
+    border-color: var(--text-main);
+    background-color: rgba(255, 255, 255, 0.05);
+}

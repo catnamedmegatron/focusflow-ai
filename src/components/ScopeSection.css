@@ -1,0 +1,110 @@
+.scope-section {
+    padding: 120px 0;
+}
+
+.scope-content {
+    display: flex;
+    align-items: center;
+    background: var(--bg-card);
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.scope-text {
+    flex: 1;
+    padding: 64px;
+}
+
+.scope-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+}
+
+.scope-list {
+    list-style: none;
+    padding: 0;
+}
+
+.scope-list li {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+}
+
+.scope-list li::before {
+    content: '→';
+    color: var(--accent-cyan);
+    margin-right: 12px;
+    font-weight: 700;
+}
+
+.scope-visuals {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    padding: 32px;
+    background: rgba(0, 0, 0, 0.2);
+    align-items: stretch;
+}
+
+.visual-card {
+    flex: 1;
+    border-radius: 16px;
+    background: #000;
+    min-height: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder {
+    background: linear-gradient(135deg, rgba(20, 20, 20, 1) 0%, rgba(30, 30, 30, 1) 100%);
+}
+
+.graphic-placeholder {
+    background: radial-gradient(circle at center, rgba(182, 235, 255, 0.05) 0%, #000 70%);
+}
+
+.pulse-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px dashed rgba(182, 235, 255, 0.3);
+    animation: pulse 4s infinite linear;
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: rotate(180deg) scale(1.1);
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(182, 235, 255, 0.5);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 992px) {
+    .scope-content {
+        flex-direction: column;
+    }
+
+    .scope-visuals {
+        width: 100%;
+    }
+}

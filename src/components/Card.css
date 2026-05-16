@@ -1,0 +1,12 @@
+.custom-card {
+    background-color: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.custom-card.glow-on-hover:hover {
+    border-color: rgba(182, 235, 255, 0.2);
+    transform: translateY(-5px);
+}
